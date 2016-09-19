@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LaMaster.master.cs" Inherits="Ejemplos.LaMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+       <style type="text/css">  
+        body form {
+	    width:300px;
+	    height:300px;
+	    margin:0 auto;
+        background-color:#D5EDEF;
+        }
+    </style>
+
+   
+
+</head>
+<body>
+    <form id="LaMasterform" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <h1>La master</h1>
+        <asp:LinkButton ID="BootsButton" runat="server" CssClass="btn btn-info" Text="Bootstrap" OnClick="Button1_Click"><span class="glyphicon glyphicon-sunglasses"></span>&nbsp;Bootstrap</asp:LinkButton> <br /><br />
+        <asp:LinkButton ID="JqButton" runat="server" CssClass="btn btn-info" Text="JQuery" OnClick="JqButton_Click" > <span class="glyphicon glyphicon-hourglass"></span>&nbsp;JQuery</asp:LinkButton> <br /><br />
+        <asp:LinkButton ID="CookiesButton" runat="server" CssClass="btn btn-info" Text="Cookies" OnClick="CookiesButton_Click" > <span class="glyphicon glyphicon-apple"></span>&nbsp;Cookies</asp:LinkButton> <br /><br />
+        <asp:LinkButton ID="SessionButton" runat="server" CssClass="btn btn-info" Text="Session" OnClick="SessionButton_Click" > <span class="glyphicon glyphicon-send"></span>&nbsp;Session</asp:LinkButton>
+    </div>
+    </form>
+</body>
+</html>
